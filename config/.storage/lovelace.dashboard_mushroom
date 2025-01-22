@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_mushroom",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Neuer Abschnitt"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "light.wiz_rgbww_tunable_69c99a"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Neuer Abschnitt"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Neuer Abschnitt"
+                },
+                {
+                  "type": "custom:clock-weather-card",
+                  "entity": "weather.forecast_home",
+                  "title": "Home",
+                  "sun_entity": "sun.sun",
+                  "temperature_sensor": "sensor.outdoor_temp",
+                  "humidity_sensor": "sensor.outdoor_humidity",
+                  "weather_icon_type": "line",
+                  "animated_icon": true,
+                  "forecast_rows": 5,
+                  "locale": "en-GB",
+                  "time_pattern": "HH:mm",
+                  "time_format": 24,
+                  "date_pattern": "ccc, d.MM.yy",
+                  "hide_today_section": false,
+                  "hide_forecast_section": false,
+                  "show_humidity": false,
+                  "hide_clock": false,
+                  "hide_date": false,
+                  "hourly_forecast": false,
+                  "use_browser_time": false,
+                  "time_zone": null,
+                  "show_decimal": false,
+                  "apparent_sensor": "sensor.real_feel_temperature",
+                  "aqi_sensor": "sensor.air_quality_index"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

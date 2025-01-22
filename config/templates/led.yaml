@@ -1,0 +1,9 @@
+sensor:
+  - name: "Light Wiz Icon"
+    state: "{{ states('light.wiz_rgbww_tunable_69c99a') }}"
+    icon: >
+      {% if is_state('light.wiz_rgbww_tunable_69c99a', 'off') %}
+        mdi:led-off
+      {% else %}
+        mdi:led-on
+      {% endif %}

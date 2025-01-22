@@ -1,0 +1,6 @@
+lahadde:
+  background-image: "center / cover no-repeat fixed url('/local/images/lohrhaupten2.jpeg')"
+  primary-color: "#358259"
+  accent-color: "#e74c3c"
+  card-background-color: "rgba(255, 255, 255, 0.8)"
+  text-color: "#333333"

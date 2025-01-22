@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_test",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Übersicht",
+          "cards": [],
+          "type": "sections",
+          "icon": "mdi:home",
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": false,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "weather.forecast_home",
+              "color": "blue-grey",
+              "show_entity_picture": false,
+              "state_content": [
+                "temperature",
+                "humidity"
+              ]
+            },
+            {
+              "type": "entity",
+              "show_name": false,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "sensor.worldclock_sensor",
+              "color": "light-grey"
+            },
+            {
+              "type": "custom:mushroom-template-badge",
+              "entity": "person.yannik",
+              "content": {
+                "[object Object]": null
+              },
+              "icon": "mdi:mushroom",
+              "color": "red"
+            },
+            {
+              "type": "custom:mushroom-template-badge",
+              "entity": "person.yannik",
+              "icon": "mdi:account",
+              "picture": "{{ states.person.yannik.attributes.entity_picture }}\n",
+              "primary": "{{ states.person.yannik.attributes.friendly_name }}\n",
+              "secondary": "Letzte Aktivität: {{ relative_time(states.person.yannik.last_changed) }}\n",
+              "content": "Home",
+              "label": "{{ states.person.yannik.attributes.friendly_name }}\n"
+            },
+            {
+              "type": "custom:mushroom-template-badge",
+              "entity": "person.talita",
+              "icon": "mdi:account",
+              "picture": "{{ states.person.talita.attributes.entity_picture }}\n",
+              "primary": "{{ states.person.talita.attributes.friendly_name }}\n",
+              "secondary": "Letzte Aktivität: {{ relative_time(states.person.talita.last_changed) }}\n",
+              "content": "Home",
+              "label": "{{ states.person.talita.attributes.friendly_name }}\n"
+            }
+          ],
+          "theme": "ios-light-mode-dark-green",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading_style": "title"
+                },
+                {
+                  "square": false,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "square": false,
+                      "type": "grid",
+                      "cards": [
+                        {
+                          "type": "custom:mushroom-template-card",
+                          "primary": "Beleuchtung Schreibtisch",
+                          "secondary": "{% if is_state('light.wiz_rgbww_tunable_69c99a', 'on') %}\n  Beleuchtung AN\n{% else %}\n  Beleuchtung AUS\n{% endif %}",
+                          "icon": "{% if is_state('light.wiz_rgbww_tunable_69c99a', 'on') %}\n  mdi:led-on\n{% else %}\n  mdi:led-off\n{% endif %}",
+                          "entity": "light.wiz_rgbww_tunable_69c99a",
+                          "icon_color": "{% if is_state('light.wiz_rgbww_tunable_69c99a', 'on') %}\n  green\n{% else %}\n  yellow\n{% endif %}"
+                        }
+                      ],
+                      "columns": 2,
+                      "title": "Büro"
+                    }
+                  ],
+                  "columns": 1
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading_style": "title"
+                },
+                {
+                  "square": false,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "square": false,
+                      "type": "grid",
+                      "cards": [
+                        {
+                          "type": "custom:clock-weather-card",
+                          "entity": "weather.forecast_home",
+                          "sun_entity": "sun.sun",
+                          "temperature_sensor": "sensor.outdoor_temp",
+                          "humidity_sensor": "sensor.outdoor_humidity",
+                          "weather_icon_type": "line",
+                          "animated_icon": true,
+                          "forecast_rows": 5,
+                          "locale": "en-GB",
+                          "time_pattern": "HH:mm",
+                          "time_format": 24,
+                          "date_pattern": "ccc, d.MM.yy",
+                          "hide_today_section": false,
+                          "hide_forecast_section": false,
+                          "show_humidity": false,
+                          "hide_clock": false,
+                          "hide_date": false,
+                          "hourly_forecast": false,
+                          "use_browser_time": false,
+                          "time_zone": null,
+                          "show_decimal": false,
+                          "apparent_sensor": "sensor.real_feel_temperature",
+                          "aqi_sensor": "sensor.air_quality_index"
+                        }
+                      ],
+                      "title": "Wetter",
+                      "columns": 1
+                    },
+                    {
+                      "square": false,
+                      "type": "grid",
+                      "cards": [
+                        {
+                          "type": "entities",
+                          "entities": [
+                            {
+                              "entity": "sensor.macbook_pro_von_yannik_battery",
+                              "name": "Yannik´s Macbook Pro"
+                            },
+                            {
+                              "entity": "sensor.apple_watch_von_yannik_battery",
+                              "name": "Yannik´s Apple Watch"
+                            },
+                            {
+                              "entity": "sensor.tschannis_iphone_battery",
+                              "name": "Yannik´s iPhone"
+                            }
+                          ],
+                          "state_color": true,
+                          "theme": "ios-light-mode-dark-green"
+                        }
+                      ],
+                      "title": "Geräte",
+                      "columns": 1
+                    }
+                  ],
+                  "columns": 1
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading_style": "title"
+                },
+                {
+                  "square": false,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "square": false,
+                      "type": "grid",
+                      "cards": [],
+                      "title": "Wohnzimmer",
+                      "columns": 1
+                    }
+                  ],
+                  "columns": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "masonry",
+          "path": "",
+          "cards": [],
+          "title": "Büro",
+          "icon": "mdi:office-building",
+          "subview": false,
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": true,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "light.wiz_rgbww_tunable_69c99a",
+              "color": "",
+              "show_entity_picture": false,
+              "state_content": [
+                "color_mode",
+                "state"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "icon": "mdi:sofa-outline",
+          "path": "unknown",
+          "title": "Wohnzimmer",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Neuer Abschnitt"
+                }
+              ]
+            }
+          ],
+          "cards": []
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Schlafzimmer",
+          "path": "schlafzimmer",
+          "icon": "mdi:bed-double-outline",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Neuer Abschnitt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Küche",
+          "path": "kuche",
+          "icon": "mdi:fridge-outline",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Neuer Abschnitt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Badezimmer",
+          "path": "badezimmer",
+          "icon": "mdi:paper-roll-outline",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Neuer Abschnitt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

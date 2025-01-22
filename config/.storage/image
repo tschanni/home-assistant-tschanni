@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "image",
+  "data": {
+    "items": [
+      {
+        "id": "40691ff342ec3f7d5da267ad0e8938c3",
+        "filesize": 956851,
+        "content_type": "image/jpeg",
+        "name": "Suits-Harvey-Specters-office-from-290.jpg",
+        "uploaded_at": "2024-12-21T13:02:27.944627+00:00"
+      },
+      {
+        "id": "68e20629b26f6a189cceec4d78331d1b",
+        "filesize": 43207,
+        "content_type": "image/jpeg",
+        "name": "FF6F7E31-2061-4B9E-98FA-3249407F43D8_1_105_c.jpeg",
+        "uploaded_at": "2024-12-28T22:12:00.228876+00:00"
+      },
+      {
+        "id": "23b79780dbb19ec7438bea441801300c",
+        "filesize": 10219,
+        "content_type": "image/jpeg",
+        "name": "FF0E5C71-C5FC-48E8-AA10-DC8F3052AE55_4_5005_c.jpeg",
+        "uploaded_at": "2024-12-28T22:12:06.261475+00:00"
+      },
+      {
+        "id": "fe99a99d4e802f2b135a96ee3b66e3e9",
+        "filesize": 43271,
+        "content_type": "image/jpeg",
+        "name": "FF6F7E31-2061-4B9E-98FA-3249407F43D8_1_105_c.jpeg",
+        "uploaded_at": "2024-12-28T22:22:25.441499+00:00"
+      }
+    ]
+  }
+}

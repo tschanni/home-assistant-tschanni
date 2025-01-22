@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "id": "544f52b5c7a9453392096d0afc32d815",
+        "url": "/local/scripts/mushroom.js",
+        "type": "module"
+      },
+      {
+        "id": "c826acf47b484c3eaa9592225777b722",
+        "url": "/local/scripts/clock-wheather-card.js",
+        "type": "module"
+      }
+    ]
+  }
+}

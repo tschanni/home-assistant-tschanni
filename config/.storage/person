@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "yannik",
+        "name": "Yannik",
+        "user_id": "094978fc66c84ce192f354dced6cc3b5",
+        "device_trackers": [
+          "device_tracker.tschannis_iphone_2"
+        ],
+        "picture": "/api/image/serve/fe99a99d4e802f2b135a96ee3b66e3e9/512x512"
+      },
+      {
+        "id": "talita",
+        "name": "Talita",
+        "device_trackers": [],
+        "user_id": null,
+        "picture": "/api/image/serve/23b79780dbb19ec7438bea441801300c/512x512"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "minor_version": 7,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "living_room",
+        "labels": [],
+        "name": "Wohnzimmer",
+        "picture": null,
+        "created_at": "2024-12-19T23:06:35.135878+00:00",
+        "modified_at": "2024-12-21T13:02:50.423800+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "kitchen",
+        "labels": [],
+        "name": "Küche",
+        "picture": null,
+        "created_at": "2024-12-19T23:06:35.135924+00:00",
+        "modified_at": "2024-12-21T13:02:43.989330+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "bedroom",
+        "labels": [],
+        "name": "Schlafzimmer",
+        "picture": null,
+        "created_at": "2024-12-19T23:06:35.135937+00:00",
+        "modified_at": "2024-12-21T13:02:57.513101+00:00"
+      },
+      {
+        "aliases": [
+          "Yanniks Raum",
+          "Büro",
+          "Zockerzimmer"
+        ],
+        "floor_id": null,
+        "icon": "mdi:office-building-outline",
+        "id": "buro",
+        "labels": [],
+        "name": "Büro",
+        "picture": "/api/image/serve/40691ff342ec3f7d5da267ad0e8938c3/512x512",
+        "created_at": "2024-12-19T23:09:49.367772+00:00",
+        "modified_at": "2024-12-21T13:03:53.654941+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "draussen",
+        "labels": [],
+        "name": "Draußen",
+        "picture": null,
+        "created_at": "2024-12-21T13:03:07.820690+00:00",
+        "modified_at": "2024-12-21T13:03:07.820709+00:00"
+      }
+    ]
+  }
+}

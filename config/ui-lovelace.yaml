@@ -1,0 +1,8 @@
+resources:
+  - url: /local/scripts/clock-weather-card.js
+    type: module
+  - url: /local/scripts/mushroom.js
+    type: module
+
+type: custom:clock-weather-card
+entity: weather.home # replace with your weather providers's entity id
